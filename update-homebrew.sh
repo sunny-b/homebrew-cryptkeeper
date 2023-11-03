@@ -30,5 +30,5 @@ git config --local user.name "GitHub Action"
 
 git add $FORMULA_PATH
 git commit -m "Update formula to version ${TAG}"
-git push origin master
+git push origin main
 
