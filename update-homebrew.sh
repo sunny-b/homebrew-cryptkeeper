@@ -24,11 +24,3 @@ SHA256=$(curl -L $TARBALL_URL | shasum -a 256 | sed 's/ .*//')
 auto_sed "s/v = \\\".*\\\" # CI Managed/v = \\\"${TAG}\\\" # CI Managed/" $FORMULA_PATH
 auto_sed "s|url .*|url \"$TARBALL_URL\"|" $FORMULA_PATH
 auto_sed "s|sha256 .*|sha256 \"$SHA256\"|" $FORMULA_PATH
-
-git config --local user.email "action@github.com"
-git config --local user.name "GitHub Action"
-
-git add $FORMULA_PATH
-git commit -m "Update formula to version ${TAG}"
-git push origin main
-
