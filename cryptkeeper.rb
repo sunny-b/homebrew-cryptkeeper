@@ -2,9 +2,9 @@ class Cryptkeeper < Formula
   desc "Direnv for encrypted secrets"
   homepage "https://github.com/sunny-b/cryptkeeper"
 
-  v = "v0.1.0" # CI Managed
-  url "https://api.github.com/repos/sunny-b/cryptkeeper/tarball/v0.1.0"
-  sha256 "08a40434fa6bf2bf51224d42a7b872b33fb3c1f6b9c38f5ab92efad8618f5c23"
+  v = "v0.1.1" # CI Managed
+  url "https://api.github.com/repos/sunny-b/cryptkeeper/tarball/v0.1.1"
+  sha256 "71c082eea4809ab71a9ec5d91e4332d0f5b6039c3a7fc5cba59f6b5037580be6"
   head "https://github.com/sunny-b/cryptkeeper.git"
   version v
 
